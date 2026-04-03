@@ -1,28 +1,57 @@
 ---
-slug: pdf-to-html
-name: PDF To HTML
-version: 0.2.1
-description: >
-  Convert PDF documents to HTML web pages with preserved formatting, layout, and structure. PDF to HTML converter, PDF to web page, document to HTML, PDF HTML export, PDF rendering as HTML, PDF web conversion, PDF to webpage, document to web format, PDF layout to HTML, PDF online viewer format, PDF markup converter, PDF to styled HTML.
-
-  Use when asked to 'convert PDF to HTML', 'turn PDF into a web page', 'make PDF viewable in browser', 'export PDF as HTML', 'render PDF as webpage'. Solves the problem of PDFs being hard to display on the web — converts them into responsive, accessible HTML that renders in any browser without plugins.
-
-  PDF转HTML, PDF转网页, PDF网页化, PDF在线查看, 文档转HTML, PDF浏览器显示, PDF格式转换为网页.
-
-  Powered by MinerU document parsing engine for high-fidelity layout preservation including multi-column layouts, tables, images, headers, footers, and mathematical formulas. Output is clean semantic HTML with optional CSS styling. Ideal for web publishing, document portals, content management systems, and making PDF content accessible and searchable online. Works with any standard PDF file.
-tags:
-  - pdf
-  - html
-  - converter
-  - web
-  - document-conversion
-  - layout
-  - formatting
-  - mineru
-  - publishing
-  - accessibility
-  - responsive
-  - browser
+name: pdf-to-html
+description: "PDF to HTML - convert PDF files to HTML using MinerU. Use when you need HTML output from a PDF document."
+homepage: https://mineru.net
+metadata: {"openclaw": {"emoji": "📄", "requires": {"bins": ["mineru-open-api"], "env": ["MINERU_TOKEN"]}, "primaryEnv": "MINERU_TOKEN", "install": [{"id": "npm", "kind": "node", "package": "mineru-open-api", "bins": ["mineru-open-api"], "label": "Install via npm"}, {"id": "go", "kind": "go", "package": "github.com/opendatalab/MinerU-Ecosystem/cli/mineru-open-api", "bins": ["mineru-open-api"], "label": "Install via go install", "os": ["darwin", "linux"]}]}}
 ---
 
-Use the mineru tool to convert the provided PDF file to HTML format. Preserve the original layout, formatting, tables, images, and structure. Output clean semantic HTML with proper heading hierarchy, table markup, and image references. Ensure the result renders correctly in modern browsers.
+# PDF to HTML
+
+Convert PDF files to HTML using MinerU.
+
+## Install
+
+```bash
+npm install -g mineru-open-api
+# or via Go (macOS/Linux):
+go install github.com/opendatalab/MinerU-Ecosystem/cli/mineru-open-api@latest
+```
+
+## Quick Start
+
+```bash
+# Convert PDF to HTML (requires token)
+mineru-open-api extract report.pdf -f html -o ./out/
+
+# From URL
+mineru-open-api extract https://example.com/report.pdf -f html -o ./out/
+
+# With language hint
+mineru-open-api extract report.pdf -f html --language en -o ./out/
+```
+
+## Authentication
+
+Token required:
+
+```bash
+mineru-open-api auth             # Interactive token setup
+export MINERU_TOKEN="your-token" # Or via environment variable
+```
+
+Create token at: https://mineru.net/apiManage/token
+
+## Capabilities
+
+- Supported input: .pdf (local file or URL)
+- Output format: HTML (`-f html`)
+- HTML output requires `extract` with token — not available in `flash-extract`
+- Language hint with `--language` (default: `ch`, use `en` for English)
+- Page range with `--pages` (e.g. `1-10`)
+
+## Notes
+
+- HTML output (`-f html`) is only available via `extract` with token
+- Output goes to stdout by default; use `-o <dir>` to save to a file
+- All progress/status messages go to stderr; document content goes to stdout
+- MinerU is open-source by OpenDataLab (Shanghai AI Lab): https://github.com/opendatalab/MinerU
