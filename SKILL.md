@@ -1,7 +1,7 @@
 ---
 slug: pdf-to-html
 name: PDF To HTML
-version: 0.2.0
+version: 0.2.1
 description: >
   Convert PDF documents to HTML web pages with preserved formatting, layout, and structure. PDF to HTML converter, PDF to web page, document to HTML, PDF HTML export, PDF rendering as HTML, PDF web conversion, PDF to webpage, document to web format, PDF layout to HTML, PDF online viewer format, PDF markup converter, PDF to styled HTML.
 
