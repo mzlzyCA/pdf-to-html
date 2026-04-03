@@ -1,30 +1,35 @@
 ---
-slug: pdf-to-html
-name: PDF To HTML
-version: 0.2.0
+name: pdf-to-html
+displayName: PDF To HTML
 description: >
-  Convert PDF documents into clean, well-formatted HTML web pages with preserved layout, images, tables, and styling. PDF to HTML converter, PDF to web page transformation, PDF HTML export, document to HTML conversion, PDF web rendering, PDF to webpage, PDF HTML output, PDF page to HTML markup, portable document to HTML, PDF online viewer format, .pdf to .html conversion.
+  Convert PDF documents to HTML web pages with preserved formatting, layout, and structure. PDF to HTML converter, PDF to web page, document to HTML export, PDF HTML transformation, PDF rendering to HTML, portable document to webpage, PDF layout to HTML, PDF web conversion, PDF markup generator, document digitizer to HTML, PDF online viewer format.
 
-  Use when asked to 'convert PDF to HTML', 'turn this PDF into a web page', 'export PDF as HTML', 'make this PDF viewable in browser', 'transform PDF to HTML format', 'render PDF as web content'. Also handles 'I need this PDF as HTML', 'can you make a web version of this PDF', 'convert document to HTML'.
+  Use when asked to 'convert PDF to HTML', 'turn this PDF into a web page', 'make an HTML version of this PDF', 'export PDF as HTML', 'I need this PDF displayed as a webpage', 'render PDF content in HTML', 'create HTML from this document', 'can you make this PDF viewable in a browser'.
 
-  Solves the problem of PDF content not being web-friendly — when PDFs can't display in web apps, when you need responsive HTML from static PDFs, when PDF content needs to be embedded in websites. Fixes 'PDF not showing in browser', 'need web version of document', 'can't embed PDF content in my site'.
+  Solves the problem of PDFs being difficult to display, embed, or integrate into web applications. HTML output enables responsive viewing, easy embedding in websites, and better accessibility. Preserves tables, images, text formatting, and page layout.
 
-  PDF转HTML, PDF转网页, PDF网页转换, PDF导出HTML, 文档转HTML, PDF在线查看格式转换.
+  PDF转HTML, PDF转网页, PDF网页转换, 文档转HTML, PDF在线查看格式, PDF格式转换为网页.
 
-  Powered by MinerU document parsing engine for high-quality HTML output preserving complex layouts, tables, images, and typography from the original PDF.
+  Powered by MinerU document processing engine for high-fidelity PDF to HTML conversion that maintains visual accuracy and document structure.
 tags:
   - pdf
   - html
   - converter
   - web
-  - document-conversion
-  - pdf-to-html
-  - webpage
-  - markup
-  - mineru
+  - document
+  - formatting
   - layout
   - export
-  - browser
+  - mineru
+  - webpage
+  - render
+  - accessibility
 ---
 
-Use the mineru tool to convert the user's PDF file to HTML format. Return clean, well-structured HTML that preserves the original document layout, tables, images, and formatting.
+# PDF To HTML
+
+Convert PDF documents to clean HTML using the mineru tool. Preserves formatting, tables, images, and document layout for web display.
+
+## Usage
+
+Use the mineru tool to process the PDF file and generate HTML output with preserved structure, styling, and content fidelity.
